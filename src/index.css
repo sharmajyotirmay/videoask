@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +17,221 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Campaign-structure, .learn-facebook {
+  min-width: 25em;
+  height: 3em;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2em;
+  gap: 1em;
+  cursor: pointer;
+}
+/*---------------------------------main-container---------------------------*/
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  background: rgb(251, 165, 165);
+  position: relative;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-player {
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  min-height: 101%;
+  min-width: 103%;
+  height: 100%;
+}
+
+.right-Buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: 50vw;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5em;
+  left: 0;
+  gap: .5em;
+  margin: 0 2em 0 2em;
+}
+
+.btn-1, .btn-2 {
+  font-weight: 500;
+  opacity: 1;
+  color: white;
+  flex-grow: 2;
+}
+
+.button-A, .button-B {
+  color: white;
+  background: rgb(125, 0, 254);
+  width: 1.9em;
+  height: 1.9em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+
+.video-bar {
+  width: 100%;
+  height: 1em;
+  background: red;
+  position: absolute;
+}
+
+.video-btns {
+  position: absolute;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  gap: .5em;
+  right: .5em;
+  top: 1.5em;
+}
+
+.caption {
+  height: 2em;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 2em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.speed {
+  background: white;
+  height: 2em;
+  width: 2em;
+  display: flex;
+  color: black;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+
+}
+.speed-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fullscreen {
+  background: white;
+  height: 2em;
+  width: 2em;
+  display: flex;
+  color: black;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+@media only screen and (min-width: 1080px) {
+  .main-container {
+    max-width: 100vw;
+  }
+  .video-container {
+    max-width: 50vw;
+    overflow: hidden;
+  }
+ .right-container {
+   max-width: 50vw;
+   height: 100vh;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .button-container {
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .right-Buttons {
+   position: relative;
+   justify-content: center;
+   width: 50vw;
+   height: 100vh;
+   margin: 0;
+   bottom: 0;
+ }
+ .video-bar {
+  width: 100%;
+  position: absolute;
+  height: 1em;
+ }
+ .progress-done {
+  height: 1em;
+  width: 40px;
+  background-color: black;
+ }
 }
